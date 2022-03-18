@@ -164,20 +164,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 							</tr>
 						</thead>
 						<tbody id="showActivityBody">
-							<%--<tr>
-								<td><input type="radio" name="activity"/></td>
-								<td>发传单</td>
-								<td>2020-10-10</td>
-								<td>2020-10-20</td>
-								<td>zhangsan</td>
-							</tr>
-							<tr>
-								<td><input type="radio" name="activity"/></td>
-								<td>发传单</td>
-								<td>2020-10-10</td>
-								<td>2020-10-20</td>
-								<td>zhangsan</td>
-							</tr>--%>
+
 						</tbody>
 					</table>
 				</div>
@@ -220,15 +207,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 				<c:forEach items="${stageList}" var="stage">
 					<option value="${stage.id}">${stage.value}</option>
 				</c:forEach>
-		    	<%--<option>资质审查</option>
-		    	<option>需求分析</option>
-		    	<option>价值建议</option>
-		    	<option>确定决策者</option>
-		    	<option>提案/报价</option>
-		    	<option>谈判/复审</option>
-		    	<option>成交</option>
-		    	<option>丢失的线索</option>
-		    	<option>因竞争丢失关闭</option>--%>
+
 		    </select>
 		  </div>
 		  <div class="form-group" style="width: 400px;position: relative; left: 20px;">

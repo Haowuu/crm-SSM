@@ -574,9 +574,6 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 									<c:forEach items="${requestScope.userList}" var="user">
 										<option value="${user.id}">${user.name}</option>
 									</c:forEach>
-									<%-- <option>zhangsan</option>
-								  <option>lisi</option>
-								  <option>wangwu</option>--%>
 								</select>
 							</div>
 							<label for="edit-company" class="col-sm-2 control-label">公司<span style="font-size: 15px; color: red;">*</span></label>
@@ -593,11 +590,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 									<c:forEach items="${requestScope.appellationList}" var="appellation">
 										<option value="${appellation.id}">${appellation.value}</option>
 									</c:forEach>
-									<%--<option selected>先生</option>
-								  <option>夫人</option>
-								  <option>女士</option>
-								  <option>博士</option>
-								  <option>教授</option>--%>
+
 								</select>
 							</div>
 							<label for="edit-fullname" class="col-sm-2 control-label">姓名<span style="font-size: 15px; color: red;">*</span></label>
@@ -640,13 +633,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 									<c:forEach items="${requestScope.clueStateList}" var="state">
 										<option value="${state.id}">${state.value}</option>
 									</c:forEach>
-								  <%--<option>试图联系</option>
-								  <option>将来联系</option>
-								  <option selected>已联系</option>
-								  <option>虚假线索</option>
-								  <option>丢失线索</option>
-								  <option>未联系</option>
-								  <option>需要条件</option>--%>
+
 								</select>
 							</div>
 						</div>
@@ -659,20 +646,6 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 									<c:forEach items="${requestScope.sourceList}" var="source">
 										<option value="${source.id}">${source.value}</option>
 									</c:forEach>
-									<%-- <option selected>广告</option>
-								  <option>推销电话</option>
-								  <option>员工介绍</option>
-								  <option>外部介绍</option>
-								  <option>在线商场</option>
-								  <option>合作伙伴</option>
-								  <option>公开媒介</option>
-								  <option>销售邮件</option>
-								  <option>合作伙伴研讨会</option>
-								  <option>内部研讨会</option>
-								  <option>交易会</option>
-								  <option>web下载</option>
-								  <option>web调研</option>
-								  <option>聊天</option>--%>
 								</select>
 							</div>
 						</div>
@@ -769,20 +742,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 						  <c:forEach items="${requestScope.sourceList}" var="source">
 							  <option value="${source.id}">${source.value}</option>
 						  </c:forEach>
-						  <%-- <option>广告</option>
-						  <option>推销电话</option>
-						  <option>员工介绍</option>
-						  <option>外部介绍</option>
-						  <option>在线商场</option>
-						  <option>合作伙伴</option>
-						  <option>公开媒介</option>
-						  <option>销售邮件</option>
-						  <option>合作伙伴研讨会</option>
-						  <option>内部研讨会</option>
-						  <option>交易会</option>
-						  <option>web下载</option>
-						  <option>web调研</option>
-						  <option>聊天</option>--%>
+
 					  </select>
 				    </div>
 				  </div>
@@ -813,13 +773,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 						  <c:forEach items="${requestScope.clueStateList}" var="state">
 							  <option value="${state.id}">${state.value}</option>
 						  </c:forEach>
-						  <%--<option>试图联系</option>
-					  	<option>将来联系</option>
-					  	<option>已联系</option>
-					  	<option>虚假线索</option>
-					  	<option>丢失线索</option>
-					  	<option>未联系</option>
-					  	<option>需要条件</option>--%>
+
 					  </select>
 				    </div>
 				  </div>
@@ -852,26 +806,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 						</tr>
 					</thead>
 					<tbody id="clueListBody">
-						<%--<tr>
-							<td><input type="checkbox" /></td>
-							<td><a style="text-decoration: none; cursor: pointer;" onclick="window.location.href='detail.jsp';">李四先生</a></td>
-							<td>动力节点</td>
-							<td>010-84846003</td>
-							<td>12345678901</td>
-							<td>广告</td>
-							<td>zhangsan</td>
-							<td>已联系</td>
-						</tr>
-                        <tr class="active">
-                            <td><input type="checkbox" /></td>
-                            <td><a style="text-decoration: none; cursor: pointer;" onclick="window.location.href='detail.jsp';">李四先生</a></td>
-                            <td>动力节点</td>
-                            <td>010-84846003</td>
-                            <td>12345678901</td>
-                            <td>广告</td>
-                            <td>zhangsan</td>
-                            <td>已联系</td>
-                        </tr>--%>
+
 					</tbody>
 				</table>
 			</div>
@@ -882,38 +817,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 				<div id="changePageBody">
 
 				</div>
-				<%--<div>
-					<button type="button" class="btn btn-default" style="cursor: default;">共<b>50</b>条记录</button>
-				</div>
-				<div class="btn-group" style="position: relative;top: -34px; left: 110px;">
-					<button type="button" class="btn btn-default" style="cursor: default;">显示</button>
-					<div class="btn-group">
-						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-							10
-							<span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu" role="menu">
-							<li><a href="#">20</a></li>
-							<li><a href="#">30</a></li>
-						</ul>
-					</div>
-					<button type="button" class="btn btn-default" style="cursor: default;">条/页</button>
-				</div>
-				<div style="position: relative;top: -88px; left: 285px;">
-					<nav>
-						<ul class="pagination">
-							<li class="disabled"><a href="#">首页</a></li>
-							<li class="disabled"><a href="#">上一页</a></li>
-							<li class="active"><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#">5</a></li>
-							<li><a href="#">下一页</a></li>
-							<li class="disabled"><a href="#">末页</a></li>
-						</ul>
-					</nav>
-				</div>--%>
+
 			</div>
 			
 		</div>

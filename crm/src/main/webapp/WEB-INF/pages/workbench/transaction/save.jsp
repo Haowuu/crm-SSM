@@ -269,20 +269,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 							</tr>
 						</thead>
 						<tbody id="activityListtBody">
-							<%--<tr>
-								<td><input type="radio" name="activity"/></td>
-								<td>发传单</td>
-								<td>2020-10-10</td>
-								<td>2020-10-20</td>
-								<td>zhangsan</td>
-							</tr>
-							<tr>
-								<td><input type="radio" name="activity"/></td>
-								<td>发传单</td>
-								<td>2020-10-10</td>
-								<td>2020-10-20</td>
-								<td>zhangsan</td>
-							</tr>--%>
+
 						</tbody>
 					</table>
 				</div>
@@ -319,18 +306,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 							</tr>
 						</thead>
 						<tbody id="contactsListtBody">
-							<%--<tr>
-								<td><input type="radio" name="activity"/></td>
-								<td>李四</td>
-								<td>lisi@bjpowernode.com</td>
-								<td>12345678901</td>
-							</tr>
-							<tr>
-								<td><input type="radio" name="activity"/></td>
-								<td>李四</td>
-								<td>lisi@bjpowernode.com</td>
-								<td>12345678901</td>
-							</tr>--%>
+
 						</tbody>
 					</table>
 				</div>
