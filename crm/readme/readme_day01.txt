@@ -1,0 +1,34 @@
+第一天项目进度
+
+1、搭建项目
+    （1）新建maven项目
+    （2）引入项目所需依赖
+    （3）添加项目配置
+        <1>MyBatis配置文件：包含添加类别名，mapper映射文件位置，添加控制台日志
+        <2>spring配置文件之数据库连接和事务配置，包含数据库连接池德鲁伊，SqlSessionFactory（数据源DataSource，myBatis配置文件位置），
+            Mapper文件扫描（SqlSessionFactoryBean，mapper文件包名），事务管理器（数据源），配置事务（aop，事务属性）
+        <3>springMVC配置文件：组件扫描器（controller），注解驱动，视图解析器
+        <4>spring总配置文件：组件扫描器（service），import导入spring数据源文件
+        <5>web配置文件：中央调度器DispatcherServlet，spring监听器用于创建spring容器及spring对象并将其放置在ServletContext作用域，
+           字符集过滤器，欢迎页
+    （4）添加项目原型
+        <1>为保证资源的安全性，将页面文件放置在WEB-INF目录中，其他静态资源（js,css,图片资源）放在webapp根目录下
+
+    （5）分析需求：
+        1、获取登录页面
+            <1>在浏览器地址栏输入项目地址，发送请求通过servlet转发获取index页面，index页面自动发送servlet请求通过转发获取login页面
+            <2>因为所有的页面信息都是保存在WEB-INF文件夹中的，所以直接通过浏览器地址是无法访问到对应的页面的，只有通过servlet请求转发至对应页面
+    （6）创建mybatis逆向工程，生成user实体类，mapper接口和映射
+    （7）创建userService接口和实现类，编写登录验证的方法以及mapper中的SQL
+    （8）在controller中编写验证登录是否成功的方法
+         <1>接收参数，loginAct，loginPwd，isRemPwd,HttpServletRequest
+         <2>封装参数至map，传递给数据库查询用户信息
+         <3>接收数据库查询信息结果
+         <4>判断登录的验证项，用户/密码是否存在，用户过期情况，用户状态，ip合法，成功登录
+         <5>编写格式化时间的工具类
+         <6>编写向用户返回的数据的实体类
+         <7>编写常数类
+    （9）进入登录的jsp页面编写js代码
+        <1>获取用户名，密码，记住密码的信息（用trim去除前后空格）
+        <2>验证用户名/密码是否为空
+        <3>发送ajax请求
